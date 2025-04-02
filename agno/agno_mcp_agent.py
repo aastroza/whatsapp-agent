@@ -1,7 +1,6 @@
 # Code from here: https://github.com/lharries/whatsapp-mcp/issues/17
 
 import asyncio
-from pathlib import Path
 from textwrap import dedent
 import logging
 from dotenv import load_dotenv
