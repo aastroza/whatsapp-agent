@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 from agno.agent import Agent
-from agno.models.google import Gemini
+from agno.models.openai import OpenAIChat
 from agno.tools.mcp import MCPTools
 from mcp import StdioServerParameters, ClientSession
 from mcp.client.stdio import stdio_client
@@ -41,7 +41,7 @@ async def run_agent() -> None:
                 logger.info("MCP tools initialized successfully")
                 
                 agent = Agent(
-                    model=Gemini(id="gemini-2.0-flash-exp", api_key=os.getenv('GEMINI_API_KEY'), search=False),
+                    model=OpenAIChat(id="gpt-4o", api_key=os.getenv('OPENAI_API_KEY')),
                     tools=[mcp_tools],
                     instructions=dedent("""\
                         You are an advanced WhatsApp bridge assistant with cognitive capabilities. Combine real-time information 

@@ -1,4 +1,4 @@
 agno
 python-dotenv
-google-genai
+openai
 mcp
