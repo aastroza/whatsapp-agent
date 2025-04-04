@@ -1,5 +1,5 @@
 # whatsapp-agent
-Minimal Agents with WhatsApp MCP setup to get things running fast
+Minimal Agents with [WhatsApp MCP](https://github.com/lharries/whatsapp-mcp/) setup to get things running fast
 
 ## Examples
 
